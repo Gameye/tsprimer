@@ -1,8 +1,7 @@
-main();
+#!/usr/bin/env node
 
-async function main() {
-    // tslint:disable: no-console
-    console.log("hi");
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log("bye");
-}
+import * as program from "commander";
+
+import "./programs";
+
+program.parse(process.argv);
