@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@sentry/node": "^5.15.4",
+    "@types/debug": "^4.1.5",
     "commander": "^5.0.0",
     "debug": "^4.1.1",
     "msecs": "^1.0.0",

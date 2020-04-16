@@ -1,2 +1,2 @@
-import "./ok";
+import "./say";
 import "./version";
