@@ -1,1 +1,1 @@
-export * from "./ok";
+export default {};
