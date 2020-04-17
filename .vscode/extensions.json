@@ -4,7 +4,8 @@
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
 		"ms-vscode.node-debug2",
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"brainfit.vscode-coverage-highlighter"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": []
