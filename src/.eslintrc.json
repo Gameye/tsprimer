@@ -1,44 +1,4 @@
 {
     "root": true,
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 2017
-    },
-    "plugins": [
-        "@typescript-eslint"
-    ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "rules": {
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/no-use-before-define": "off",
-        "@typescript-eslint/no-unused-vars": "off",
-        "@typescript-eslint/no-non-null-assertion": "off",
-        "comma-dangle": [
-            "error",
-            "always-multiline"
-        ],
-        "no-multiple-empty-lines": [
-            "error",
-            {
-                "max": 1,
-                "maxBOF": 0,
-                "maxEOF": 0
-            }
-        ],
-        "eol-last": "error",
-        "complexity": "error",
-        "max-len": [
-            "error",
-            {
-                "code": 100,
-                "ignoreStrings": true,
-                "ignoreTemplateLiterals": true,
-                "ignoreRegExpLiterals": true
-            }
-        ]
-    }
+    "extends": "gameye"
 }
