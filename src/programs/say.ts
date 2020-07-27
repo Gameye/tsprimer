@@ -1,6 +1,4 @@
-import * as Sentry from "@sentry/node";
 import * as program from "commander";
-import { waitForSignal } from "../utils";
 
 program.
     command("say").
@@ -13,8 +11,6 @@ interface ActionConfig {
 async function programAction({
     message,
 }: ActionConfig) {
-    Sentry.init();
 
     console.log(message);
-    await waitForSignal("SIGINT");
 }
