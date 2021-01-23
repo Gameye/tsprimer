@@ -1,11 +1,11 @@
 #!/bin/sh
 
 export PROJECT=Gameye/tsprimer
+export BRANCH=$(git branch --show-current)
 
 set +e # continue on error
 
 grep --no-messages --silent ^github\.com, ~/.ssh/known_hosts
-
 if [ $? -eq 0 ]
 then
     export UPSTREAM_URL=git@github.com:$PROJECT.git
@@ -15,5 +15,5 @@ fi
 
 set -e # Exit immediately if a command exits with a non-zero status.
 
-git pull --no-rebase $UPSTREAM_URL master:master
-git push origin master:master
+git pull --no-rebase $UPSTREAM_URL $BRANCH:$BRANCH
+git push origin $BRANCH:$BRANCH
