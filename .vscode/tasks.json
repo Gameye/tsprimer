@@ -3,26 +3,23 @@
     "tasks": [
         {
             "type": "typescript",
-            "label": "watch",
             "tsconfig": "tsconfig.json",
             "option": "watch",
             "problemMatcher": [
                 "$tsc-watch"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build",
+            "label": "watch"
         },
         {
-            "type": "npm",
-            "script": "coverage",
-            "problemMatcher": [],
-            "label": "npm: coverage",
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            }
-        }
+            "type": "typescript",
+            "tsconfig": "tsconfig.module.json",
+            "option": "watch",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "group": "build",
+            "label": "watch-module"
+        },
     ]
 }
