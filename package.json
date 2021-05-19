@@ -10,6 +10,9 @@
     "module/*",
     "types/*"
   ],
+  "bin": {
+    "tsprimer": "node/program.js"
+  },
   "scripts": {
     "prepare": "npm run compile",
     "compile": "tsc && tsc --project tsconfig.module.json",
