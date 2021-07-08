@@ -1,8 +1,8 @@
-import * as program from "commander";
+import { program } from "commander";
 
 program.
     command("say").
-    option("--message <string>", "What should I say?", String).
+    requiredOption("--message <string>", "What should I say?", String).
     action(programAction);
 
 interface ActionConfig {

@@ -1,7 +1,4 @@
 .*
 *.log
 /node_modules/
-/coverage/
-/node/
-/module/
-/types/
+/out/

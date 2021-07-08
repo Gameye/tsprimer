@@ -1,9 +1,5 @@
-import * as test from "tape-promise/tape";
-import { packageName, packageInfo } from "./package";
-
-test("package name", async t => {
-    t.equal(packageName, "tsprimer");
-});
+import test from "tape-promise/tape.js";
+import { packageInfo } from "./package.js";
 
 test("package version", async t => {
     t.notOk(packageInfo.version, undefined);

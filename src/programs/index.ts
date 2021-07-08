@@ -1,2 +1,3 @@
-import "./say";
-import "./version";
+import "./say.js";
+import "./version.js";
+
