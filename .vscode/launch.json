@@ -1,4 +1,19 @@
 {
+<<<<<<< HEAD
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "name": "run file",
+            "program": "${file}",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "outFiles": [
+                "${workspaceRoot}/out/**/*.js"
+            ],
+            "preLaunchTask": "tsc-watch",
+=======
     "version": "0.2.0",
     "configurations": [
         {
@@ -13,6 +28,7 @@
             "outFiles": [
                 "${workspaceFolder}/node/**/*.js"
             ]
+>>>>>>> f24152bff804024b5ae7913df59891e138cf0b12
         }
     ]
 }

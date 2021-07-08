@@ -2,43 +2,41 @@
   "name": "@gameye/tsprimer",
   "version": "v0.0.0-local",
   "description": "",
-  "main": "node/main.js",
-  "module": "module/main.js",
-  "types": "types/main.d.ts",
+  "sideEffects": false,
+  "type": "module",
+  "main": "out/main.js",
+  "types": "out/main.d.ts",
   "files": [
-    "node/*",
-    "module/*",
-    "types/*"
+    "out/*"
   ],
   "bin": {
     "tsprimer": "node/program.js"
   },
   "scripts": {
-    "prepare": "npm run compile",
-    "compile": "tsc && tsc --project tsconfig.module.json",
-    "clean": "rm -rf node types module",
+    "prepare": "npm run build",
+    "build": "npm run tsc",
+    "clean": "rm -rf out",
     "test": "npm run spec-all",
     "lint": "eslint \"src/**/*.ts\"",
-    "spec": "tape --require \"ts-node/register\"",
-    "spec-all": "npm run spec \"src/**/*.spec.ts\"",
-    "coverage": "nyc --reporter text-summary --reporter lcov --reporter json npm test"
+    "spec-all": "esm-tape-runner \"out/**/*.spec.js\"",
+    "tsc": "tsc",
+    "tsc-watch": "npm run tsc -- --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@small-tech/esm-tape-runner": "^1.0.3",
     "@types/tape": "^4.13.0",
     "@types/tape-promise": "^4.0.1",
     "eslint-config-gameye": "^0.1.3",
-    "nyc": "^15.1.0",
     "tape": "^5.0.1",
     "tape-promise": "^4.0.0",
-    "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "commander": "^7.0.0",
+    "commander": "^8.0.0",
     "msecs": "^1.0.0",
     "tslib": "^2.0.1",
-    "type-fest": "^1.1.3"
+    "type-fest": "^1.2.1"
   }
 }

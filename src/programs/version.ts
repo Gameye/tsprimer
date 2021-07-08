@@ -1,5 +1,5 @@
-import * as program from "commander";
-import { packageInfo } from "../utils";
+import { program } from "commander";
+import { packageInfo } from "../utils/index.js";
 
 if (packageInfo.version) {
     program.version(packageInfo.version);

@@ -1,2 +1,3 @@
-export * from "./root";
-export * from "./package";
+export * from "./package.js";
+export * from "./root.js";
+
