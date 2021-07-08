@@ -1,5 +1,6 @@
 {
   "name": "@gameye/tsprimer",
+  "version": "v0.0.0-local",
   "description": "",
   "sideEffects": false,
   "type": "module",
@@ -8,6 +9,9 @@
   "files": [
     "out/*"
   ],
+  "bin": {
+    "tsprimer": "node/program.js"
+  },
   "scripts": {
     "prepare": "npm run build",
     "build": "npm run tsc",
